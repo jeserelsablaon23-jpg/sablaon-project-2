@@ -1,0 +1,119 @@
+/* KCC custom theme — layered over the Bootstrap template */
+:root{--kcc-green:#176b43;--kcc-deep:#0b3324;--kcc-gold:#e5b84c;--kcc-cream:#fbf8ef;--kcc-ink:#18251f;--kcc-muted:#66736b}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"DM Sans",sans-serif;color:var(--kcc-ink);background:#fff}
+a{text-decoration:none}
+.header{height:86px;background:rgba(255,255,255,.97);box-shadow:0 3px 22px rgba(14,47,31,.08);transition:.3s}
+.header .container{height:100%}
+.brand{gap:11px;color:var(--kcc-deep)}
+.brand img{width:54px;height:54px;border-radius:50%;object-fit:contain;background:#fff}
+.brand span{display:flex;flex-direction:column;line-height:1.15}
+.brand strong{font-family:"Playfair Display",serif;font-size:24px;letter-spacing:1px;color:var(--kcc-green)}
+.brand small{font-size:10px;letter-spacing:.35px;color:#53645a}
+.navmenu ul{display:flex;align-items:center;gap:24px;margin:0;padding:0;list-style:none}
+.navmenu a{font-size:13px;font-weight:700;color:#34463b;padding:12px 0;position:relative}
+.navmenu a:hover,.navmenu a.active{color:var(--kcc-green)}
+.navmenu a:after{content:"";position:absolute;left:0;bottom:5px;width:0;height:2px;background:var(--kcc-gold);transition:.25s}
+.navmenu a:hover:after,.navmenu a.active:after{width:100%}
+.btn-kcc,.btn-outline-kcc,.btn-light-kcc{display:inline-flex;align-items:center;gap:12px;padding:14px 22px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:.2px;transition:.25s}
+.btn-kcc{background:var(--kcc-green);color:#fff;border:1px solid var(--kcc-green)}
+.btn-kcc:hover{background:#0d4d30;color:#fff;transform:translateY(-2px)}
+.header .btn-kcc{padding:11px 17px}
+.kcc-hero{min-height:720px;position:relative;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(5,35,23,.92) 0%,rgba(7,43,29,.79) 48%,rgba(6,38,26,.32) 100%),url("https://johnpaologalimba.wordpress.com/wp-content/uploads/2017/10/paologalimba.png") center 44%/cover no-repeat;padding:145px 0 90px}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,24,16,.45),transparent 42%)}
+.hero-content{position:relative;z-index:1}
+.hero-label,.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--kcc-gold)}
+.hero-label{display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.hero-label span{width:28px;height:2px;background:var(--kcc-gold)}
+.kcc-hero h1{font:800 clamp(42px,6vw,76px)/1.08 "Playfair Display",serif;max-width:850px;margin:0 0 20px;color:#fff}
+.kcc-hero h1 em,.section-heading h2 em,.admissions-box h2 em{color:var(--kcc-gold);font-style:normal}
+.hero-quote{font:600 18px "Playfair Display",serif;color:#f4e5b7;margin-bottom:12px}
+.hero-intro{max-width:550px;font-size:16px;line-height:1.8;color:rgba(255,255,255,.85)}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn-outline-kcc{border:1px solid rgba(255,255,255,.65);color:#fff}
+.btn-outline-kcc:hover{background:#fff;color:var(--kcc-deep)}
+.hero-note{margin-top:45px;font-size:12px;letter-spacing:1px;color:#e5e9e3}
+.hero-note i{color:var(--kcc-gold);margin-right:8px}
+.hero-bottom{position:absolute;bottom:25px;left:0;right:0;display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.7px;color:rgba(255,255,255,.72)}
+.section-kcc{padding:100px 0}
+.section-heading{text-align:center;max-width:720px;margin:0 auto 55px}
+.section-heading .eyebrow{color:var(--kcc-green)}
+.section-heading h2{font:700 clamp(32px,4vw,46px)/1.15 "Playfair Display",serif;margin:12px 0;color:var(--kcc-deep)}
+.section-heading h2 em{color:var(--kcc-green)}
+.section-heading p{color:var(--kcc-muted);font-size:15px;line-height:1.8;margin:0}
+.about-kcc{background:var(--kcc-cream)}
+.campus-photo-wrap{position:relative;padding:0 30px 30px 0}
+.campus-photo-wrap:before{content:"";position:absolute;left:25px;top:25px;right:0;bottom:0;border:2px solid var(--kcc-gold);z-index:0}
+.campus-photo{position:relative;z-index:1;width:100%;height:390px;object-fit:cover;object-position:center;border-radius:3px;box-shadow:0 20px 50px rgba(14,47,31,.13)}
+.photo-caption{position:absolute;z-index:2;bottom:0;right:0;background:var(--kcc-green);color:#fff;padding:17px 22px;display:flex;flex-direction:column;min-width:205px}
+.photo-caption strong{font:700 30px "Playfair Display",serif;color:var(--kcc-gold)}
+.photo-caption span{font-size:11px;letter-spacing:.5px}
+.about-kcc h3{font:700 32px/1.2 "Playfair Display",serif;color:var(--kcc-deep);margin:13px 0 18px}
+.about-kcc p{color:#5e6d63;font-size:14px;line-height:1.9}
+.text-link{display:inline-flex;gap:8px;align-items:center;color:var(--kcc-green);font-weight:700;font-size:13px;margin-top:8px}
+.about-facts{display:flex;gap:28px;border-top:1px solid #e1e4d9;margin-top:30px;padding-top:23px}
+.about-facts div{display:flex;flex-direction:column}
+.about-facts strong{font:700 23px "Playfair Display",serif;color:var(--kcc-green)}
+.about-facts span{font-size:11px;color:var(--kcc-muted)}
+.pillars-section{background:var(--kcc-deep);background-image:radial-gradient(circle at 90% 10%,rgba(229,184,76,.11),transparent 30%)}
+.light-heading h2{color:#fff}.light-heading h2 em{color:var(--kcc-gold)}.light-heading p{color:#c4d1c8}.light-heading .eyebrow{color:var(--kcc-gold)}
+.pillar-card{height:100%;min-height:260px;padding:28px 25px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:5px;position:relative;transition:.3s}
+.pillar-card:hover{transform:translateY(-7px);background:rgba(255,255,255,.1);border-color:rgba(229,184,76,.6)}
+.pillar-number{position:absolute;right:22px;top:20px;font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.38)}
+.pillar-card i{font-size:31px;color:var(--kcc-gold)}
+.pillar-card h3{font:700 19px "Playfair Display",serif;color:#fff;margin:22px 0 12px}
+.pillar-card p{font-size:13px;line-height:1.8;color:#c6d1c9;margin:0}
+.programs-section{background:#fff}
+.program-intro{display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #e7ece7;padding-bottom:15px;margin-bottom:25px}
+.program-intro span{font-size:12px;font-weight:800;letter-spacing:1.3px;color:var(--kcc-green)}
+.program-intro span i{font-size:18px;margin-right:7px}
+.program-intro small{font-size:11px;color:#7c877f}
+.program-card{height:100%;min-height:235px;border:1px solid #e6ece7;border-radius:5px;padding:26px 24px;background:#fff;transition:.25s}
+.program-card:hover{transform:translateY(-5px);border-color:#b6d1bf;box-shadow:0 14px 35px rgba(18,74,46,.09)}
+.program-icon{width:48px;height:48px;display:grid;place-items:center;background:#edf5ef;color:var(--kcc-green);border-radius:50%;font-size:22px;margin-bottom:18px}
+.program-tag{font-size:9px;letter-spacing:1.5px;font-weight:800;color:#a17b27}
+.program-card h3{font:700 19px "Playfair Display",serif;color:var(--kcc-deep);margin:9px 0}
+.program-card p{font-size:13px;line-height:1.75;color:var(--kcc-muted);margin:0}
+.shs-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;padding:38px;background:var(--kcc-cream);border-left:4px solid var(--kcc-gold)}
+.shs-copy .eyebrow{color:var(--kcc-green)}
+.shs-copy h3{font:700 28px "Playfair Display",serif;color:var(--kcc-deep);margin:10px 0}
+.shs-copy p{font-size:13px;line-height:1.8;color:var(--kcc-muted);margin:0}
+.shs-strands{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.shs-strands div{background:#fff;padding:16px;border:1px solid #e8e9df;display:flex;flex-direction:column;gap:5px}
+.shs-strands b{font:700 21px "Playfair Display",serif;color:var(--kcc-green)}
+.shs-strands span{font-size:11px;color:#5d6a61;line-height:1.5}
+.program-note,.image-disclaimer{font-size:11px;line-height:1.6;color:#7b877f;margin:18px 0 0}
+.campus-section{background:var(--kcc-cream)}
+.campus-card{height:100%;background:#fff;box-shadow:0 8px 25px rgba(20,50,34,.06)}
+.campus-card img{width:100%;height:220px;object-fit:cover}
+.campus-card div{padding:22px 23px}
+.campus-card span{font-size:9px;letter-spacing:1.5px;color:#9c7627;font-weight:800}
+.campus-card h3{font:700 21px "Playfair Display",serif;color:var(--kcc-deep);margin:8px 0}
+.campus-card p{font-size:13px;line-height:1.7;color:var(--kcc-muted);margin:0}
+.admissions-section{padding:30px 0 100px;background:var(--kcc-cream)}
+.admissions-box{background:linear-gradient(110deg,#0c3928,#176b43);padding:50px 55px;display:flex;align-items:center;justify-content:space-between;gap:35px;color:#fff}
+.admissions-box .eyebrow{color:var(--kcc-gold)}
+.admissions-box h2{font:700 37px "Playfair Display",serif;color:#fff;margin:12px 0}
+.admissions-box p{max-width:650px;color:#d6e1d9;font-size:14px;line-height:1.8;margin:0}
+.btn-light-kcc{background:var(--kcc-gold);color:#1b2d22;white-space:nowrap}
+.btn-light-kcc:hover{background:#f2d27e;color:#1b2d22}
+.contact-section{background:#fff}
+.contact-info{height:100%;padding:32px;background:var(--kcc-cream)}
+.contact-line{display:flex;gap:17px;padding:15px 0;border-bottom:1px solid #e5e8dd}
+.contact-line:last-child{border:0}
+.contact-line>i{font-size:21px;color:var(--kcc-green)}
+.contact-line h3{font:700 16px "Playfair Display",serif;color:var(--kcc-deep);margin:0 0 5px}
+.contact-line p{font-size:13px;line-height:1.7;color:var(--kcc-muted);margin:0}
+.contact-line a{color:var(--kcc-green);font-weight:600}
+.map-card{height:100%;min-height:380px;position:relative;background:#e8eee9}
+.map-card iframe{width:100%;height:100%;min-height:380px;border:0}
+.map-link{position:absolute;bottom:15px;left:15px;background:#fff;color:var(--kcc-green);padding:11px 15px;font-size:12px;font-weight:700;box-shadow:0 4px 16px #0002}
+.kcc-footer{background:#082b1e;color:#fff;padding:28px 0}
+.footer-brand{display:flex;flex-direction:column;gap:5px}
+.footer-brand strong{font:700 15px "Playfair Display",serif;letter-spacing:.7px}
+.footer-brand span,.kcc-footer p{font-size:11px;color:#b9c9bf;margin:0}
+.back-top{width:36px;height:36px;border:1px solid #668171;color:var(--kcc-gold);display:grid;place-items:center;border-radius:50%}
+.mobile-nav-toggle{font-size:27px;color:var(--kcc-green);cursor:pointer}
+@media(max-width:1199px){.navmenu ul{gap:15px}.navmenu a{font-size:12px}}
+@media(max-width:991px){.header{height:75px}.brand img{width:47px;height:47px}.navmenu ul{display:none}.mobile-nav-toggle{display:block}.mobile-nav-active .navmenu ul{display:flex;position:absolute;top:75px;left:15px;right:15px;flex-direction:column;align-items:stretch;gap:0;padding:15px 22px;background:#fff;box-shadow:0 10px 30px #0002;border-radius:5px}.mobile-nav-active .navmenu ul li{padding:7px 0}.mobile-nav-active .navmenu a:after{display:none}.kcc-hero{min-height:680px}.shs-panel{grid-template-columns:1fr}.admissions-box{align-items:flex-start;flex-direction:column}}
+@media(max-width:767px){.section-kcc{padding:75px 0}.kcc-hero{min-height:660px;padding:125px 0 90px;background-position:58% center}.kcc-hero h1{font-size:43px}.hero-intro{font-size:14px}.hero-bottom{font-size:8px;letter-spacing:1px}.campus-photo{height:300px}.about-facts{gap:16px}.about-facts strong{font-size:19px}.program-intro{align-items:flex-start;flex-direction:column}.shs-panel{padding:25px 20px}.shs-strands{grid-template-columns:1fr 1fr}.admissions-box{padding:35px 25px}.admissions-box h2{font-size:30px}.contact-info{padding:23px}.kcc-footer .container{align-items:flex-start!important}}
